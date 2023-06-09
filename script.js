@@ -8,7 +8,7 @@ createApp({
 	},
 	methods: {
         requestAlbums() {
-			axios.get('http://localhost/classe96-0900-todo-list/todos.php')
+			axios.get('http://localhost/php-dischi-json/albums.php')
 				.then(response => this.arrTodos = response.data);
         },
     },
