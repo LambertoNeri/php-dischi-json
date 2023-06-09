@@ -16,6 +16,6 @@ createApp({
 
 
 created() {
-    this.requestTodos()
+    this.requestAlbums()
 }
 }).mount('#app')
