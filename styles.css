@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8vh;
+    color: white;
+    background-color: #06131F;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+}
+
 .container{
     max-width: 1200px;
     margin-inline: auto;
@@ -11,6 +29,7 @@
 
 .background-dark{
     background-color: #1D2D3C;
+    height: 100vh;
 }
 
 ul{
@@ -32,6 +51,7 @@ li{
     height: 350px;
     background-color: #112030;
     text-align: center;
+    border-radius: 5px;
 }
 
 .card{  
