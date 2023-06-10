@@ -6,12 +6,37 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PHP Dischi JSON</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	
-    ciao
+    <div class="app" id="app">
+        <div class="container">
+            <div class="background-dark">
+                <ul>
+                    <li v-for="(album, i) in arrAlbums" :key="i">
+                        <div class="card">
+                            <div class="container">
+                                <div class="picture">
+                                    <img :src="album.img" alt="">
+                                </div>
+                                <span>{{ album.title }}</span>
+                                <span>{{ album.author }}</span>
+                                <span>{{ album.year }}</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  
+                    
+                  
+
+
+
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="script.js"></script>
